@@ -20,9 +20,18 @@ Notes:
 function sumDigits(num) {
   // your code here
   
-  /* START SOLUTION */
-  
+  num = num.toString();
 
+  var isNegative;
+  if (num[0] === "-") {
+    isNegative = true;
+    num = num.substring(1);
+  }
 
+  var total = 0;
+  for(var i = 0; i < num.length; i++) {
+    total += Number(num[i]);
+  }
+  return isNegative ? total - Number(num[0]) * 2 : total;
   /* END SOLUTION */
 }
