@@ -19,9 +19,10 @@ Notes:
 
 function sumDigits(num) {
   // your code here
+  
   /* START SOLUTION */
   
 
-  
+
   /* END SOLUTION */
 }
